@@ -1,0 +1,878 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>491</width>
+    <height>372</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resourse.qrc">
+    <normaloff>:/res/icons/tns.png</normaloff>:/res/icons/tns.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>491</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <stylestrategy>PreferDefault</stylestrategy>
+     </font>
+    </property>
+    <property name="tabPosition">
+     <enum>QTabWidget::North</enum>
+    </property>
+    <property name="tabShape">
+     <enum>QTabWidget::Rounded</enum>
+    </property>
+    <property name="currentIndex">
+     <number>3</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="icon">
+      <iconset resource="resourse.qrc">
+       <normaloff>:/res/icons/home_32.png</normaloff>:/res/icons/home_32.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>The next series</string>
+     </attribute>
+     <widget class="QComboBox" name="comboBox">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>441</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="statusTip">
+       <string>Select series you're watching</string>
+      </property>
+      <property name="editable">
+       <bool>true</bool>
+      </property>
+      <property name="currentIndex">
+       <number>-1</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>471</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel { font: 27pt &quot;Arial&quot;; color: rgb(0, 85, 255); }</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="text">
+       <string>Text.....</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>240</y>
+        <width>441</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QPushButton" name="pushButton_10">
+         <property name="statusTip">
+          <string>Series looked</string>
+         </property>
+         <property name="text">
+          <string>Viewed</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resourse.qrc">
+           <normaloff>:/res/icons/tick_32.png</normaloff>:/res/icons/tick_32.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+         <property name="default">
+          <bool>true</bool>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="pushButton_11">
+         <property name="statusTip">
+          <string>None of the series has not looked</string>
+         </property>
+         <property name="text">
+          <string>Don't look anything</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resourse.qrc">
+           <normaloff>:/res/icons/block_32.png</normaloff>:/res/icons/block_32.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QPushButton" name="pushButton_12">
+         <property name="statusTip">
+          <string>End of the series (maybe the season)</string>
+         </property>
+         <property name="text">
+          <string>End of the series</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resourse.qrc">
+           <normaloff>:/res/icons/flag_32.png</normaloff>:/res/icons/flag_32.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="icon">
+      <iconset resource="resourse.qrc">
+       <normaloff>:/res/icons/search_32.png</normaloff>:/res/icons/search_32.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>Viewed</string>
+     </attribute>
+     <widget class="QPushButton" name="pushButton_9">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>256</y>
+        <width>111</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="statusTip">
+       <string>Clear list of viewed serials</string>
+      </property>
+      <property name="text">
+       <string>Clear List</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resourse.qrc">
+        <normaloff>:/res/icons/trash_32.png</normaloff>:/res/icons/trash_32.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>461</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>Series shown here that you have already seen:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPlainTextEdit" name="plainTextEdit">
+         <property name="font">
+          <font>
+           <strikeout>false</strikeout>
+          </font>
+         </property>
+         <property name="statusTip">
+          <string>This shows you all watched TV series</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="documentTitle">
+          <string/>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="icon">
+      <iconset resource="resourse.qrc">
+       <normaloff>:/res/icons/monitor_32.png</normaloff>:/res/icons/monitor_32.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>Control</string>
+     </attribute>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>12</x>
+        <y>11</y>
+        <width>461</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0" colspan="4">
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="statusTip">
+            <string>Name of serial</string>
+           </property>
+           <property name="text">
+            <string>Name</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit">
+           <property name="statusTip">
+            <string>Type name</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="statusTip">
+            <string>Number of serial</string>
+           </property>
+           <property name="whatsThis">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Number</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="spinBox">
+           <property name="statusTip">
+            <string>Choose number</string>
+           </property>
+           <property name="maximum">
+            <number>999999</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="pushButton">
+         <property name="statusTip">
+          <string>Add new serial</string>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="text">
+          <string>Add</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resourse.qrc">
+           <normaloff>:/res/icons/plus_32.png</normaloff>:/res/icons/plus_32.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="default">
+          <bool>true</bool>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="statusTip">
+          <string>Edit serial</string>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="text">
+          <string>Edit</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resourse.qrc">
+           <normaloff>:/res/icons/pencil_32.png</normaloff>:/res/icons/pencil_32.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QPushButton" name="pushButton_3">
+         <property name="statusTip">
+          <string>Delete serial</string>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="text">
+          <string>Delete</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resourse.qrc">
+           <normaloff>:/res/icons/delete_32.png</normaloff>:/res/icons/delete_32.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QPushButton" name="pushButton_4">
+         <property name="statusTip">
+          <string>Save serials</string>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="text">
+          <string>Save</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resourse.qrc">
+           <normaloff>:/res/icons/save_32.png</normaloff>:/res/icons/save_32.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0" colspan="4">
+        <widget class="QTableView" name="tableView">
+         <property name="statusTip">
+          <string>You serials</string>
+         </property>
+         <property name="selectionBehavior">
+          <enum>QAbstractItemView::SelectRows</enum>
+         </property>
+         <property name="showGrid">
+          <bool>true</bool>
+         </property>
+         <attribute name="horizontalHeaderCascadingSectionResizes">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>103</number>
+         </attribute>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="icon">
+      <iconset resource="resourse.qrc">
+       <normaloff>:/res/icons/gear_32.png</normaloff>:/res/icons/gear_32.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>Settings</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>10</y>
+        <width>401</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Where to save</string>
+      </property>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>316</width>
+         <height>110</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <widget class="QRadioButton" name="radioButton_3">
+          <property name="statusTip">
+           <string>Save all files in the folder with the executable</string>
+          </property>
+          <property name="text">
+           <string>Use Defaul folder</string>
+          </property>
+          <property name="icon">
+           <iconset resource="resourse.qrc">
+            <normaloff>:/res/icons/help_32.png</normaloff>:/res/icons/help_32.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>24</width>
+            <height>24</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QRadioButton" name="radioButton">
+          <property name="statusTip">
+           <string>Save in synchronized folders dropbox</string>
+          </property>
+          <property name="text">
+           <string>Use Dropbox folder</string>
+          </property>
+          <property name="icon">
+           <iconset resource="resourse.qrc">
+            <normaloff>:/res/icons/Dropbox_Logo.png</normaloff>:/res/icons/Dropbox_Logo.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>24</width>
+            <height>24</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLabel" name="label_5">
+          <property name="statusTip">
+           <string>If the folder is already stored files of the program, to display them need to be restarted</string>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel::hover { color: rgb(0, 85, 255) };
+QLabel {color: rgb(255, 0, 255) };
+QLabe::pressed {color: rgb(255, 170, 127) };
+</string>
+          </property>
+          <property name="text">
+           <string>(?)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="2" column="0" colspan="3">
+         <widget class="QRadioButton" name="radioButton_2">
+          <property name="statusTip">
+           <string>Use your location to save</string>
+          </property>
+          <property name="text">
+           <string>Use another place for saving serials and collection  files</string>
+          </property>
+          <property name="icon">
+           <iconset resource="resourse.qrc">
+            <normaloff>:/res/icons/folder_32.png</normaloff>:/res/icons/folder_32.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>24</width>
+            <height>24</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>140</y>
+        <width>401</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>General settings</string>
+      </property>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>381</width>
+         <height>132</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0" colspan="2">
+         <widget class="QCheckBox" name="checkBox">
+          <property name="statusTip">
+           <string>Do not display tray notifications</string>
+          </property>
+          <property name="text">
+           <string>Don't show notifications</string>
+          </property>
+          <property name="icon">
+           <iconset resource="resourse.qrc">
+            <normaloff>:/res/icons/bubble_32.png</normaloff>:/res/icons/bubble_32.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>24</width>
+            <height>24</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="3">
+         <widget class="QCheckBox" name="checkBox_2">
+          <property name="statusTip">
+           <string>When you click the &quot;Series Viewed&quot; series is automatically saved</string>
+          </property>
+          <property name="text">
+           <string>Save number series after viewing</string>
+          </property>
+          <property name="icon">
+           <iconset resource="resourse.qrc">
+            <normaloff>:/res/icons/briefcase_32.png</normaloff>:/res/icons/briefcase_32.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>24</width>
+            <height>24</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QCheckBox" name="checkBox_3">
+          <property name="statusTip">
+           <string>When the form is closed the program it will not be minimized to tray</string>
+          </property>
+          <property name="text">
+           <string>Exit when closing form</string>
+          </property>
+          <property name="icon">
+           <iconset resource="resourse.qrc">
+            <normaloff>:/res/icons/stop_32.png</normaloff>:/res/icons/stop_32.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>24</width>
+            <height>24</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="2" column="2">
+         <widget class="QCheckBox" name="checkBox_4">
+          <property name="statusTip">
+           <string>Do not print a message when closing the program</string>
+          </property>
+          <property name="text">
+           <string>Hide notification about hiding</string>
+          </property>
+          <property name="icon">
+           <iconset resource="resourse.qrc">
+            <normaloff>:/res/icons/warning_32.png</normaloff>:/res/icons/warning_32.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>24</width>
+            <height>24</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QCheckBox" name="checkBox_5">
+          <property name="statusTip">
+           <string>Store all the data on exit</string>
+          </property>
+          <property name="text">
+           <string>Saved on exit</string>
+          </property>
+          <property name="icon">
+           <iconset resource="resourse.qrc">
+            <normaloff>:/res/icons/present_32.png</normaloff>:/res/icons/present_32.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>24</width>
+            <height>24</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_5">
+     <attribute name="icon">
+      <iconset resource="resourse.qrc">
+       <normaloff>:/res/icons/info_32.png</normaloff>:/res/icons/info_32.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>Info</string>
+     </attribute>
+     <widget class="QToolButton" name="toolButton">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>250</y>
+        <width>48</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="statusTip">
+       <string>A little summary information about me</string>
+      </property>
+      <property name="text">
+       <string>About</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resourse.qrc">
+        <normaloff>:/res/icons/letter_32.png</normaloff>:/res/icons/letter_32.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>0</y>
+        <width>451</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <property name="statusTip">
+       <string>A little summary information</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel { font: 16pt &quot;Arial&quot;; color: rgb(10, 125, 155); }</string>
+      </property>
+      <property name="text">
+       <string>About</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_2">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>250</y>
+        <width>48</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="statusTip">
+       <string>A couple of tips</string>
+      </property>
+      <property name="text">
+       <string>Tips</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resourse.qrc">
+        <normaloff>:/res/icons/key_32.png</normaloff>:/res/icons/key_32.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>491</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuLOL">
+    <property name="title">
+     <string>TNS</string>
+    </property>
+    <addaction name="Hide"/>
+    <addaction name="separator"/>
+    <addaction name="Exit"/>
+   </widget>
+   <addaction name="menuLOL"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="Hide">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/res/icons/down_32.png</normaloff>:/res/icons/down_32.png</iconset>
+   </property>
+   <property name="text">
+    <string>Hide</string>
+   </property>
+   <property name="statusTip">
+    <string>Hide program</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+H</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="Exit">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/res/icons/stop_32.png</normaloff>:/res/icons/stop_32.png</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="statusTip">
+    <string>Exit completely</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="resourse.qrc"/>
+ </resources>
+ <connections/>
+</ui>
